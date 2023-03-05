@@ -1,4 +1,8 @@
 package com.example.gestion_livres.repository;
 
-public interface LocationRepository {
+import com.example.gestion_livres.model.Book;
+import com.example.gestion_livres.model.Location;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface LocationRepository extends JpaRepository<Location,Integer> {
 }
